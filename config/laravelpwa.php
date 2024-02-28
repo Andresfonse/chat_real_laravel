@@ -4,7 +4,7 @@ return [
     'name' => 'LaravelPWA',
     'manifest' => [
         'name' => env('APP_NAME', 'Chat WAYKE'),
-        'short_name' => 'WAYKE',
+        'short_name' => 'PWA',
         'start_url' => '/',
         'background_color' => '#ffffff',
         'theme_color' => '#000000',

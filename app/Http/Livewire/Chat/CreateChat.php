@@ -11,7 +11,8 @@ use Livewire\Component;
 class CreateChat extends Component
 {
     public $users;
-    public $message= 'hello how are you ';
+    public $message= 'u wanna talk?';
+    
 
 
     public function checkconversation($receiverId)
@@ -35,17 +36,17 @@ class CreateChat extends Component
         $createdConversation->last_time_message= $createdMessage->created_at;
         $createdConversation->save();
 
-        dd($createdMessage);
-        dd('saved');
+       // dd($createdMessage);
+      //  dd('saved');
 
 
 
 
         } else if (count($checkedConversation) >= 1) {
 
-            dd(
+          dd(
                 'conversation exists'
-            );
+            ); 
         }
         # code...
     }
